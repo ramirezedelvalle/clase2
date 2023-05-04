@@ -16,7 +16,8 @@ class Producto {
 
     #DEFINICION DE METODOS
     public function mostrarProducto(){
-        echo "El Producto es: " . $this->nombre . " y su precio es de: " . $this->precio;
+        echo "El Producto es " . $this->nombre . " y su precio es de " . $this->precio;
+        echo "<br>";
     }
 
     #METODO GETTER PARA LA PROPIEDAD PROTEGIDA DE NOMBRE
@@ -31,12 +32,12 @@ class Producto {
 }
 
 $producto = new Producto('Tablet', 200, true);
-//$producto->mostrarProducto(
-echo $producto->getNombre(); 
+$producto->mostrarProducto();
+//echo $producto->getNombre(); 
 //OBTIENE EL NOMBRE
 $producto->setNombre('Nuevo Nombre'); 
 //SETEA EL NOMBRE
-echo $producto->getNombre();
+//echo $producto->getNombre();
 //OBTIENE EL NOMBRE
 ?>
 
