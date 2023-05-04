@@ -10,11 +10,11 @@ $this->capacidad = $capacidad;
 }
 
 public function getInfo() : string {
-return "El transporte tiene " . $this>ruedas . " ruedas y una capacidad de " . $this->capacidad . " personas ";
+return "El transporte tiene " . $this->ruedas . " ruedas y una capacidad de " . $this->capacidad . " personas ";
 }
 
     public function getRuedas() : int {
-    return $this>ruedas;
+    return $this->ruedas;
     }
 }
 
@@ -39,7 +39,7 @@ class Automovil extends Transporte {
     }
 
     public function getTransmision() : string {
-    return $This->Transmision;
+    return $this->transmision;
     }
 }
 
@@ -53,27 +53,27 @@ echo $bicicleta->getRuedas();
 
 echo "<hr>";
 
-// INSTANCIA DEL SEgUNDO OBJETO, CON EL ATRIBUTO ADICIONAL
+// INSTANCIA DEL SEGUNDO OBJETO, CON EL ATRIBUTO ADICIONAL
 $auto = new Automovil(4, 4, "Manual");
 // METODO HEREDADO DE TRANSPORTE
 echo $auto->getInfo();
 // METODO DE LA CLASE AUTOMOVIL
 echo $auto->getTransmision();
 
-abstract class Transporte {
-    protected int $ruedas;
-    protected int $capacidad;
-    public function __construct(int $ruedas, int $capacidad)
-    {
-    $this->ruedas = $ruedas;
-    $this->capacidad = $capacidad;
-    }
-    final public function getInfo() : string {
-    return "El transporte tiene " . $this->ruedas . " ruedas y una capacidad de " . $this->capacidad . " personas ";
-    }
-    public function getRuedas() : int {
-    return $this->ruedas;
-    }
-}
+//abstract class Transporte {
+//    protected int $ruedas;
+//    protected int $capacidad;
+//    public function __construct(int $ruedas, int $capacidad)
+//    {
+//    $this->ruedas = $ruedas;
+//   $this->capacidad = $capacidad;
+//    }
+//    final public function getInfo() : string {
+//    return "El transporte tiene " . $this->ruedas . " ruedas y una capacidad de " . $this->capacidad . " personas ";
+//    }
+//    public function getRuedas() : int {
+//    return $this->ruedas;
+//   }
+// }
 
 ?>
