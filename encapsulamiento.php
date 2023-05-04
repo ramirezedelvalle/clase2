@@ -8,7 +8,8 @@ public bool $disponible;
 
 #metodo constructor, se ejecuta al efectuar la instancia
 
-public function _construct(string $nombre, int $precio, bool $disponible)
+public function __construct(string $nombre, int $precio, bool $disponible)
+
 {
     #SE LES DA VALORS A LOS ATRIBUTOS CON LOS PARAMETROS QUE RECIBE EL MÉTODO CONSTRUCTOR
     $this->nombre = $nombre;
