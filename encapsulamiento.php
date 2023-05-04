@@ -11,9 +11,9 @@ public bool $disponible;
 public function _construct(string $nombre, int $precio, bool $disponible)
 {
     #SE LES DA VALORS A LOS ATRIBUTOS CON LOS PARAMETROS QUE RECIBE EL MÉTODO CONSTRUCTOR
-    $this-nombre = $nombre;
-    $this>precio = $precio;
-    $this>disponible = $disponible;
+    $this->nombre = $nombre;
+    $this->precio = $precio;
+    $this->disponible = $disponible;
 }
 #DEFINICION DE METODOS
 public function mostrarProducto(){
@@ -27,7 +27,7 @@ return $this->nombre;
 
     #METODO SETTER PARA LA PROPIEDAD PROTEGIDA DE NOMBRE
     public function setNombre(string $nombre) {
-    $this-nombre = $nombre;
+    $this->nombre = $nombre;
 
     }
 }
